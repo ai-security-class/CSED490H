@@ -20,9 +20,9 @@ body {
 }
 
 .site-header {
-  border-top: 6px solid var(--postech-red);
-  border-bottom: 1px solid var(--border);
-  background: #fff;
+  border-top: 6px solid #8d1128;
+  border-bottom: 1px solid #7c0f22;
+  background: linear-gradient(90deg, #9d1730 0%, #c21737 100%);
 }
 
 .wrap {
@@ -39,7 +39,7 @@ body {
 }
 
 .brand {
-  color: var(--postech-navy);
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.3px;
@@ -47,7 +47,7 @@ body {
 
 .brand small {
   display: block;
-  color: var(--postech-muted);
+  color: #f7d9e0;
   font-weight: 500;
   font-size: 0.8rem;
 }
@@ -58,14 +58,18 @@ body {
 }
 
 .nav a {
-  color: var(--postech-text);
+  color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  opacity: 0.92;
 }
 
 .nav a:hover,
 .nav a.active {
-  color: var(--postech-red);
+  color: #fff;
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .hero {
@@ -130,6 +134,15 @@ th {
 
 td strong {
   color: var(--postech-navy);
+}
+
+.download-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.download-list li {
+  margin: 8px 0;
 }
 
 .site-footer {

@@ -1,0 +1,158 @@
+:root {
+  --postech-red: #c21737;
+  --postech-navy: #1e2a44;
+  --postech-light: #f7f8fb;
+  --postech-text: #1a1d24;
+  --postech-muted: #5c6473;
+  --border: #d9dde7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  color: var(--postech-text);
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fd 100%);
+  line-height: 1.6;
+}
+
+.site-header {
+  border-top: 6px solid var(--postech-red);
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.brand {
+  color: var(--postech-navy);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+
+.brand small {
+  display: block;
+  color: var(--postech-muted);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav a {
+  color: var(--postech-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--postech-red);
+}
+
+.hero {
+  padding: 54px 0 44px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--postech-navy);
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 760px;
+  font-size: 1.08rem;
+  color: #303849;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 18px 0;
+  box-shadow: 0 8px 28px rgba(26, 33, 52, 0.05);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+  color: var(--postech-navy);
+  font-family: "Merriweather", Georgia, serif;
+}
+
+.note {
+  border-left: 4px solid var(--postech-red);
+  padding: 10px 14px;
+  background: var(--postech-light);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f2f4fa;
+  color: var(--postech-navy);
+  font-weight: 700;
+}
+
+td strong {
+  color: var(--postech-navy);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 34px;
+  padding: 20px 0 36px;
+  color: var(--postech-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+}

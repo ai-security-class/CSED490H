@@ -20,6 +20,9 @@ body {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   border-top: 6px solid #8d1128;
   border-bottom: 1px solid #7c0f22;
   background: linear-gradient(90deg, #9d1730 0%, #c21737 100%);
@@ -35,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 16px 0;
 }
 
 .brand {
@@ -73,7 +76,11 @@ body {
 }
 
 .hero {
-  padding: 54px 0 44px;
+  padding: 54px 0 36px;
+}
+
+.hero-compact {
+  padding-bottom: 20px;
 }
 
 .hero h1 {
@@ -88,6 +95,30 @@ body {
   max-width: 760px;
   font-size: 1.08rem;
   color: #303849;
+}
+
+.cta-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--postech-red);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #a50f2d;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--postech-navy);
+  border-color: var(--border);
 }
 
 .card {
@@ -106,10 +137,68 @@ body {
   font-family: "Merriweather", Georgia, serif;
 }
 
+.tight {
+  margin-bottom: 8px;
+}
+
+.subhead {
+  margin-bottom: 8px;
+}
+
+.muted-line {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.info-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  background: #fbfcff;
+}
+
+.info-item strong {
+  display: block;
+  color: var(--postech-navy);
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 22px 0;
+}
+
 .note {
   border-left: 4px solid var(--postech-red);
   padding: 10px 14px;
   background: var(--postech-light);
+}
+
+a {
+  color: #9d1730;
+}
+
+a:hover {
+  color: #7e0f24;
 }
 
 table {
@@ -130,6 +219,10 @@ th {
   background: #f2f4fa;
   color: var(--postech-navy);
   font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background: #fcfdff;
 }
 
 td strong {
@@ -162,6 +255,11 @@ td strong {
 
   .nav {
     flex-wrap: wrap;
+  }
+
+  .profile-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
   }
 
   th,

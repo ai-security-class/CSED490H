@@ -33,101 +33,107 @@
       </section>
 
       <section class="card">
-        <h2>Instructor</h2>
-        <div class="profile-grid">
-          <img src="sangdonpark.jpg" alt="Prof. Sangdon Park" class="profile-photo" />
-          <div>
-            <h3 class="tight">Prof. <a href="https://sangdon.github.io/" target="_blank" rel="noopener">Sangdon Park</a></h3>
-            <p>
-              Assistant Professor <br/>
-              Graduate School of Artificial Intelligence (GSAI) <br/>
-              Department of Computer Science and Engineering (CSE) <br/>
-              POSTECH
-            </p>
-          </div>
-        </div>
+        <h2>Course Staff</h2>
+        <section class="subsection-card">
+          <h3>Instructor</h3>
+            <div class="profile-grid">
+              <img src="sangdonpark.jpg" alt="Prof. Sangdon Park" class="profile-photo" />
+              <div>
+                <h3 class="tight">Prof. <a href="https://sangdon.github.io/" target="_blank" rel="noopener">Sangdon Park</a></h3>
+                <p>
+                  Assistant Professor <br/>
+                  Graduate School of Artificial Intelligence (GSAI) <br/>
+                  Department of Computer Science and Engineering (CSE) <br/>
+                  POSTECH
+                </p>
+              </div>
+            </div>
+        </section>
 
-        <hr class="divider" />
+        <section class="subsection-card">
+          <h3>Teaching Assistant</h3>
 
-        <h2 class="subhead">Teaching Assistant</h2>
-        <div class="profile-grid">
-          <img src="ta.jpg" alt="TA Sechan Lee" class="profile-photo" />
-          <div>
-            <h3 class="tight">Sechan Lee</h3>
-            <p>
-              Teaching Assistant for CSED490H. Supporting course operations, student discussions,
-              and technical guidance on assignments and project milestones.
-            </p>
-            <p class="muted-line">
-              Email: <a href="mailto:chan1031@postech.ac.kr">chan1031@postech.ac.kr</a>
-            </p>
-          </div>
-        </div>
+            <div class="profile-grid">
+              <img src="ta.jpg" alt="TA Sechan Lee" class="profile-photo" />
+              <div>
+                <h3 class="tight">Sechan Lee</h3>
+                <p>
+                  Teaching Assistant for CSED490H. Supporting course operations, student discussions,
+                  and technical guidance on assignments and project milestones.
+                </p>
+                <p class="muted-line">
+                  Email: <a href="mailto:chan1031@postech.ac.kr">chan1031@postech.ac.kr</a>
+                </p>
+              </div>
+            </div>
+        </section>
       </section>
 
       <section class="card" id="course-snapshot">
         <h2>Course Snapshot</h2>
         <div class="info-grid">
           <div class="info-item"><strong>Credits</strong><span>3-0-3</span></div>
-          <div class="info-item"><strong>Time</strong><span>Thu 14:00–15:15</span></div>
+          <div class="info-item"><strong>Time / Location</strong><span>Thu 14:00–15:15 / Building 2 - 109 </span></div>
           <div class="info-item"><strong>Prerequisite</strong><span>Artificial Intelligence</span></div>
           <div class="info-item"><strong>Assessment</strong><span>80% Projects · 20% Participation</span></div>
         </div>
-
-        <section class="subsection-card">
-          <h3>Objective</h3>
-          <p>
-            As AI advances and becomes practical at scale, safety and security concerns are rapidly
-            emerging. In this course, we learn the art of attacking AI systems together with the
-            core concepts and tools needed in modern AI.
-          </p>
-          <p>
-            In particular, we study two core axes: <strong>victim models</strong> (e.g., LLMs, VLAs,
-            and Agentic AI) and <strong>attack methods</strong> (e.g., adversarial examples and
-            jailbreaking), along with optimization tools such as gradient descent, policy
-            optimization, and prompt tuning with LoRA.
-          </p>
-          <p>
-            By the end of this class, students will have a strong understanding of trendy AI model
-            families, broad AI red teaming methods, and practical AI tooling required for security
-            research and engineering.
-          </p>
-        </section>
-
-        <section class="subsection-card">
-          <h3>Schedule</h3>
-          <table>
-            <thead>
-              <tr>
-                <th style="width: 90px">Week</th>
-                <th>Topics</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr><td><strong>1</strong></td><td>
-                    <a href="slides/intro-ai-security.pdf" target="_blank" rel="noopener">Introduction to AI Security</a>
-                    <br />
-                    <a href="slides/intro-ai-security-logistics.pdf" target="_blank" rel="noopener">Course Logistics</a>
-                </td>
-                </tr>
-              <tr><td><strong>2</strong></td><td>Preliminary: Neural Networks / SGD<br />Inference-time Attacks: Adversarial Examples / Adversarial Patches / Transfer Attacks</td></tr>
-              <tr><td><strong>3</strong></td><td>Preliminary: Transformers / LLMs / LCMs / LRMs<br />Preliminary: RAG</td></tr>
-              <tr><td><strong>4</strong></td><td>Student Presentation and Discussion on HW 1</td></tr>
-              <tr><td><strong>5</strong></td><td>Preliminary: Diffusion Models<br />Preliminary: Vision-Language-Action Models</td></tr>
-              <tr><td><strong>6</strong></td><td>Preliminary: Optimization for Whitebox Victim Models -- Prompt tuning methods (e.g., LoRA)<br />Preliminary: Optimization for Blackbox Victim Models -- Zero-th Order Optimization</td></tr>
-              <tr><td><strong>7</strong></td><td>Preliminary: Optimization for Blackbox Victim Models -- RL / Policy Optimization<br />Inference-time Attacks: Prompt Leaking, Prompt Injection, Jailbreaking</td></tr>
-              <tr><td><strong>8</strong></td><td>Preliminary: Agentic AI / Tool-calling Agents<br />Inference-time Attacks: Current Trends on Red Teaming</td></tr>
-              <tr><td><strong>9</strong></td><td>Student Presentation and Discussion on HW 2</td></tr>
-              <tr><td><strong>10</strong></td><td>Introduction to OpenClaw</td></tr>
-              <tr><td><strong>11</strong></td><td>Training-set Attacks: membership inference attacks<br />Training-set Attacks: data poisoning attacks</td></tr>
-              <tr><td><strong>12</strong></td><td>Model Attacks: model extraction attacks</td></tr>
-              <tr><td><strong>13</strong></td><td>Final Remarks: Overview on defense methods</td></tr>
-              <tr><td><strong>14</strong></td><td>Student Presentation and Discussion on Final Projects</td></tr>
-              <tr><td><strong>15</strong></td><td>Student Presentation and Discussion on Final Projects</td></tr>
-            </tbody>
-          </table>
-        </section>
       </section>
+      
+      <section class="card">
+        <h2>Objective</h2>
+        <p>
+          As AI advances and becomes practical at scale, safety and security concerns are rapidly
+          emerging. In this course, we learn the art of attacking AI systems together with the
+          core concepts and tools needed in modern AI.
+        </p>
+        <p>
+          In particular, we study two core axes: <strong>victim models</strong> (e.g., LLMs, VLAs,
+          and Agentic AI) and <strong>attack methods</strong> (e.g., adversarial examples and
+          jailbreaking), along with optimization tools such as gradient descent, policy
+          optimization, and prompt tuning with LoRA.
+        </p>
+        <p>
+          By the end of this class, students will have a strong understanding of trendy AI model
+          families, broad AI red teaming methods, and practical AI tooling required for security
+          research and engineering.
+        </p>
+      </section>
+      
+      <section class="card">
+        <h2>Schedule</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 90px">Week</th>
+              <th>Topics</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td><strong>1</strong></td><td>
+                  <a href="slides/intro-ai-security.pdf" target="_blank" rel="noopener">Introduction to AI Security</a>
+                  <br />
+                  <a href="slides/intro-ai-security-logistics.pdf" target="_blank" rel="noopener">Course Logistics</a>
+              </td>
+              </tr>
+            <tr><td><strong>2</strong></td><td>Preliminary: Neural Networks / SGD<br />Inference-time Attacks: Adversarial Examples / Adversarial Patches / Transfer Attacks</td></tr>
+            <tr><td><strong>3</strong></td><td>Preliminary: Transformers / LLMs / LCMs / LRMs<br />Preliminary: RAG</td></tr>
+            <tr><td><strong>4</strong></td><td>Student Presentation and Discussion on HW 1</td></tr>
+            <tr><td><strong>5</strong></td><td>Preliminary: Diffusion Models<br />Preliminary: Vision-Language-Action Models</td></tr>
+            <tr><td><strong>6</strong></td><td>Preliminary: Optimization for Whitebox Victim Models -- Prompt tuning methods (e.g., LoRA)<br />Preliminary: Optimization for Blackbox Victim Models -- Zero-th Order Optimization</td></tr>
+            <tr><td><strong>7</strong></td><td>Preliminary: Optimization for Blackbox Victim Models -- RL / Policy Optimization<br />Inference-time Attacks: Prompt Leaking, Prompt Injection, Jailbreaking</td></tr>
+            <tr><td><strong>8</strong></td><td>Preliminary: Agentic AI / Tool-calling Agents<br />Inference-time Attacks: Current Trends on Red Teaming</td></tr>
+            <tr><td><strong>9</strong></td><td>Student Presentation and Discussion on HW 2</td></tr>
+            <tr><td><strong>10</strong></td><td>Introduction to OpenClaw</td></tr>
+            <tr><td><strong>11</strong></td><td>Training-set Attacks: membership inference attacks<br />Training-set Attacks: data poisoning attacks</td></tr>
+            <tr><td><strong>12</strong></td><td>Model Attacks: model extraction attacks</td></tr>
+            <tr><td><strong>13</strong></td><td>Final Remarks: Overview on defense methods</td></tr>
+            <tr><td><strong>14</strong></td><td>Student Presentation and Discussion on Final Projects</td></tr>
+            <tr><td><strong>15</strong></td><td>Student Presentation and Discussion on Final Projects</td></tr>
+          </tbody>
+        </table>
+      </section>
+      
+      
     </main>
 
     <footer class="site-footer">
